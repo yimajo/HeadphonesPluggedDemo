@@ -1,0 +1,305 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A5EF84B016EB268B009CCB68 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5EF84AF16EB268B009CCB68 /* UIKit.framework */; };
+		A5EF84B216EB268B009CCB68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5EF84B116EB268B009CCB68 /* Foundation.framework */; };
+		A5EF84B416EB268B009CCB68 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5EF84B316EB268B009CCB68 /* CoreGraphics.framework */; };
+		A5EF84BA16EB268B009CCB68 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5EF84B816EB268B009CCB68 /* InfoPlist.strings */; };
+		A5EF84BC16EB268B009CCB68 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A5EF84BB16EB268B009CCB68 /* main.m */; };
+		A5EF84C016EB268B009CCB68 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5EF84BF16EB268B009CCB68 /* AppDelegate.m */; };
+		A5EF84C216EB268B009CCB68 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A5EF84C116EB268B009CCB68 /* Default.png */; };
+		A5EF84C416EB268B009CCB68 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5EF84C316EB268B009CCB68 /* Default@2x.png */; };
+		A5EF84C616EB268B009CCB68 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5EF84C516EB268B009CCB68 /* Default-568h@2x.png */; };
+		A5EF84C916EB268B009CCB68 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5EF84C716EB268B009CCB68 /* MainStoryboard.storyboard */; };
+		A5EF84CC16EB268B009CCB68 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5EF84CB16EB268B009CCB68 /* MasterViewController.m */; };
+		A5EF84CF16EB268B009CCB68 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5EF84CE16EB268B009CCB68 /* DetailViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A5EF84AB16EB268A009CCB68 /* HeadphonesPluggedDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeadphonesPluggedDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5EF84AF16EB268B009CCB68 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A5EF84B116EB268B009CCB68 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A5EF84B316EB268B009CCB68 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A5EF84B716EB268B009CCB68 /* HeadphonesPluggedDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HeadphonesPluggedDemo-Info.plist"; sourceTree = "<group>"; };
+		A5EF84B916EB268B009CCB68 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A5EF84BB16EB268B009CCB68 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A5EF84BD16EB268B009CCB68 /* HeadphonesPluggedDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HeadphonesPluggedDemo-Prefix.pch"; sourceTree = "<group>"; };
+		A5EF84BE16EB268B009CCB68 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A5EF84BF16EB268B009CCB68 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A5EF84C116EB268B009CCB68 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		A5EF84C316EB268B009CCB68 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		A5EF84C516EB268B009CCB68 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A5EF84C816EB268B009CCB68 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		A5EF84CA16EB268B009CCB68 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		A5EF84CB16EB268B009CCB68 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		A5EF84CD16EB268B009CCB68 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		A5EF84CE16EB268B009CCB68 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5EF84A816EB268A009CCB68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5EF84B016EB268B009CCB68 /* UIKit.framework in Frameworks */,
+				A5EF84B216EB268B009CCB68 /* Foundation.framework in Frameworks */,
+				A5EF84B416EB268B009CCB68 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A5EF84A016EB268A009CCB68 = {
+			isa = PBXGroup;
+			children = (
+				A5EF84B516EB268B009CCB68 /* HeadphonesPluggedDemo */,
+				A5EF84AE16EB268B009CCB68 /* Frameworks */,
+				A5EF84AC16EB268B009CCB68 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A5EF84AC16EB268B009CCB68 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5EF84AB16EB268A009CCB68 /* HeadphonesPluggedDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5EF84AE16EB268B009CCB68 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5EF84AF16EB268B009CCB68 /* UIKit.framework */,
+				A5EF84B116EB268B009CCB68 /* Foundation.framework */,
+				A5EF84B316EB268B009CCB68 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5EF84B516EB268B009CCB68 /* HeadphonesPluggedDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A5EF84BE16EB268B009CCB68 /* AppDelegate.h */,
+				A5EF84BF16EB268B009CCB68 /* AppDelegate.m */,
+				A5EF84C716EB268B009CCB68 /* MainStoryboard.storyboard */,
+				A5EF84CA16EB268B009CCB68 /* MasterViewController.h */,
+				A5EF84CB16EB268B009CCB68 /* MasterViewController.m */,
+				A5EF84CD16EB268B009CCB68 /* DetailViewController.h */,
+				A5EF84CE16EB268B009CCB68 /* DetailViewController.m */,
+				A5EF84B616EB268B009CCB68 /* Supporting Files */,
+			);
+			path = HeadphonesPluggedDemo;
+			sourceTree = "<group>";
+		};
+		A5EF84B616EB268B009CCB68 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5EF84B716EB268B009CCB68 /* HeadphonesPluggedDemo-Info.plist */,
+				A5EF84B816EB268B009CCB68 /* InfoPlist.strings */,
+				A5EF84BB16EB268B009CCB68 /* main.m */,
+				A5EF84BD16EB268B009CCB68 /* HeadphonesPluggedDemo-Prefix.pch */,
+				A5EF84C116EB268B009CCB68 /* Default.png */,
+				A5EF84C316EB268B009CCB68 /* Default@2x.png */,
+				A5EF84C516EB268B009CCB68 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5EF84AA16EB268A009CCB68 /* HeadphonesPluggedDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5EF84D216EB268B009CCB68 /* Build configuration list for PBXNativeTarget "HeadphonesPluggedDemo" */;
+			buildPhases = (
+				A5EF84A716EB268A009CCB68 /* Sources */,
+				A5EF84A816EB268A009CCB68 /* Frameworks */,
+				A5EF84A916EB268A009CCB68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeadphonesPluggedDemo;
+			productName = HeadphonesPluggedDemo;
+			productReference = A5EF84AB16EB268A009CCB68 /* HeadphonesPluggedDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5EF84A216EB268A009CCB68 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = yimajo;
+			};
+			buildConfigurationList = A5EF84A516EB268A009CCB68 /* Build configuration list for PBXProject "HeadphonesPluggedDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A5EF84A016EB268A009CCB68;
+			productRefGroup = A5EF84AC16EB268B009CCB68 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5EF84AA16EB268A009CCB68 /* HeadphonesPluggedDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5EF84A916EB268A009CCB68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5EF84BA16EB268B009CCB68 /* InfoPlist.strings in Resources */,
+				A5EF84C216EB268B009CCB68 /* Default.png in Resources */,
+				A5EF84C416EB268B009CCB68 /* Default@2x.png in Resources */,
+				A5EF84C616EB268B009CCB68 /* Default-568h@2x.png in Resources */,
+				A5EF84C916EB268B009CCB68 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5EF84A716EB268A009CCB68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5EF84BC16EB268B009CCB68 /* main.m in Sources */,
+				A5EF84C016EB268B009CCB68 /* AppDelegate.m in Sources */,
+				A5EF84CC16EB268B009CCB68 /* MasterViewController.m in Sources */,
+				A5EF84CF16EB268B009CCB68 /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A5EF84B816EB268B009CCB68 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5EF84B916EB268B009CCB68 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A5EF84C716EB268B009CCB68 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5EF84C816EB268B009CCB68 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5EF84D016EB268B009CCB68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A5EF84D116EB268B009CCB68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5EF84D316EB268B009CCB68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HeadphonesPluggedDemo/HeadphonesPluggedDemo-Prefix.pch";
+				INFOPLIST_FILE = "HeadphonesPluggedDemo/HeadphonesPluggedDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A5EF84D416EB268B009CCB68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HeadphonesPluggedDemo/HeadphonesPluggedDemo-Prefix.pch";
+				INFOPLIST_FILE = "HeadphonesPluggedDemo/HeadphonesPluggedDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5EF84A516EB268A009CCB68 /* Build configuration list for PBXProject "HeadphonesPluggedDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5EF84D016EB268B009CCB68 /* Debug */,
+				A5EF84D116EB268B009CCB68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5EF84D216EB268B009CCB68 /* Build configuration list for PBXNativeTarget "HeadphonesPluggedDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5EF84D316EB268B009CCB68 /* Debug */,
+				A5EF84D416EB268B009CCB68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5EF84A216EB268A009CCB68 /* Project object */;
+}
