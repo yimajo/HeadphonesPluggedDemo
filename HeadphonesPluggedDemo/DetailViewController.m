@@ -10,7 +10,11 @@
 #import <AudioToolbox/AudioToolbox.h>
 
 @interface DetailViewController ()
+
+@property (strong, nonatomic) HeadphonesDetector *headphoneDetector;
+
 - (void)configureView;
+
 @end
 
 @implementation DetailViewController
@@ -41,8 +45,8 @@
     [super viewDidLoad];
 	[self configureView];
 	
-	[HeadphonesDetector sharedDetector].delegate = self;
-	
+	self.headphoneDetector = [[HeadphonesDetector alloc] init];
+	self.headphoneDetector.delegate = self;	
 }
 
 - (void)didReceiveMemoryWarning

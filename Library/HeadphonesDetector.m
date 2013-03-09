@@ -49,6 +49,7 @@ void audioRouteChangeListenerCallback (void *inUserData, AudioSessionPropertyID 
 			result = YES;
 		}
 	}
+	CFRelease(route);
 	return result;
 }
 
@@ -64,7 +65,9 @@ void audioRouteChangeListenerCallback (void *inUserData, AudioSessionPropertyID 
 
 - (void) dealloc {
 	self.delegate = nil;
-	
+	AudioSessionRemovePropertyListenerWithUserData(kAudioSessionProperty_AudioRouteChange, audioRouteChangeListenerCallback, self);
+	AudioSessionInitialize(NULL, NULL, NULL, NULL);
+
 	[super dealloc];
 }
 
@@ -74,7 +77,7 @@ void audioRouteChangeListenerCallback (void *inUserData, AudioSessionPropertyID 
 	CFNumberRef routeChangeReasonRef = CFDictionaryGetValue (routeChangeDictionary, CFSTR(kAudioSession_AudioRouteChangeKey_Reason));
 	SInt32 routeChangeReason;
 	CFNumberGetValue(routeChangeReasonRef, kCFNumberSInt32Type, &routeChangeReason);
-	
+	NSLog(@"callback");
 	if (routeChangeReason == kAudioSessionRouteChangeReason_OldDeviceUnavailable ||
 		routeChangeReason == kAudioSessionRouteChangeReason_NewDeviceAvailable) {
 		HeadphonesDetector *headphonesDetector = (HeadphonesDetector *) inUserData;
