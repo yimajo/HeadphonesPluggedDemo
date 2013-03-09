@@ -93,7 +93,7 @@
 		A5EF84B516EB268B009CCB68 /* HeadphonesPluggedDemo */ = {
 			isa = PBXGroup;
 			children = (
-				A5EF84DE16EB2748009CCB68 /* Library */,
+				A5EF84DE16EB2748009CCB68 /* YIHeadphonesDetector */,
 				A5EF84BE16EB268B009CCB68 /* AppDelegate.h */,
 				A5EF84BF16EB268B009CCB68 /* AppDelegate.m */,
 				A5EF84C716EB268B009CCB68 /* MainStoryboard.storyboard */,
@@ -120,13 +120,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A5EF84DE16EB2748009CCB68 /* Library */ = {
+		A5EF84DE16EB2748009CCB68 /* YIHeadphonesDetector */ = {
 			isa = PBXGroup;
 			children = (
 				A5EF84E416EB365C009CCB68 /* YIHeadphonesDetector.h */,
 				A5EF84E516EB365C009CCB68 /* YIHeadphonesDetector.m */,
 			);
-			path = Library;
+			path = YIHeadphonesDetector;
 			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
@@ -316,6 +316,7 @@
 				A5EF84D416EB268B009CCB68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
