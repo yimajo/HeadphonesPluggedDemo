@@ -7,6 +7,7 @@
 //
 
 #import "DetailViewController.h"
+#import <AudioToolbox/AudioToolbox.h>
 
 @interface DetailViewController ()
 - (void)configureView;
@@ -38,14 +39,27 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
 	[self configureView];
+	
+	[HeadphonesDetector sharedDetector].delegate = self;
+	
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)headphonesDetectorStateChanged:(HeadphonesDetector *)headphonesDetector
+{
+	NSString *message = nil;
+	if (headphonesDetector.headphonesArePlugged) {
+		message = @"plugged";
+	} else {
+		message = @"unplugged";
+	}	
+	self.detailDescriptionLabel.text = message;
 }
 
 @end

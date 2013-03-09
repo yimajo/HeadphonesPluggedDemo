@@ -19,6 +19,8 @@
 		A5EF84C916EB268B009CCB68 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5EF84C716EB268B009CCB68 /* MainStoryboard.storyboard */; };
 		A5EF84CC16EB268B009CCB68 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5EF84CB16EB268B009CCB68 /* MasterViewController.m */; };
 		A5EF84CF16EB268B009CCB68 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5EF84CE16EB268B009CCB68 /* DetailViewController.m */; };
+		A5EF84E116EB2748009CCB68 /* HeadphonesDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = A5EF84E016EB2748009CCB68 /* HeadphonesDetector.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A5EF84E316EB275B009CCB68 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5EF84E216EB275B009CCB68 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,9 @@
 		A5EF84CB16EB268B009CCB68 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		A5EF84CD16EB268B009CCB68 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		A5EF84CE16EB268B009CCB68 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		A5EF84DF16EB2748009CCB68 /* HeadphonesDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadphonesDetector.h; sourceTree = "<group>"; };
+		A5EF84E016EB2748009CCB68 /* HeadphonesDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadphonesDetector.m; sourceTree = "<group>"; };
+		A5EF84E216EB275B009CCB68 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5EF84E316EB275B009CCB68 /* AudioToolbox.framework in Frameworks */,
 				A5EF84B016EB268B009CCB68 /* UIKit.framework in Frameworks */,
 				A5EF84B216EB268B009CCB68 /* Foundation.framework in Frameworks */,
 				A5EF84B416EB268B009CCB68 /* CoreGraphics.framework in Frameworks */,
@@ -76,6 +82,7 @@
 		A5EF84AE16EB268B009CCB68 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A5EF84E216EB275B009CCB68 /* AudioToolbox.framework */,
 				A5EF84AF16EB268B009CCB68 /* UIKit.framework */,
 				A5EF84B116EB268B009CCB68 /* Foundation.framework */,
 				A5EF84B316EB268B009CCB68 /* CoreGraphics.framework */,
@@ -86,6 +93,7 @@
 		A5EF84B516EB268B009CCB68 /* HeadphonesPluggedDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A5EF84DE16EB2748009CCB68 /* Library */,
 				A5EF84BE16EB268B009CCB68 /* AppDelegate.h */,
 				A5EF84BF16EB268B009CCB68 /* AppDelegate.m */,
 				A5EF84C716EB268B009CCB68 /* MainStoryboard.storyboard */,
@@ -111,6 +119,15 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		A5EF84DE16EB2748009CCB68 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				A5EF84DF16EB2748009CCB68 /* HeadphonesDetector.h */,
+				A5EF84E016EB2748009CCB68 /* HeadphonesDetector.m */,
+			);
+			path = Library;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -182,6 +199,7 @@
 				A5EF84C016EB268B009CCB68 /* AppDelegate.m in Sources */,
 				A5EF84CC16EB268B009CCB68 /* MasterViewController.m in Sources */,
 				A5EF84CF16EB268B009CCB68 /* DetailViewController.m in Sources */,
+				A5EF84E116EB2748009CCB68 /* HeadphonesDetector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

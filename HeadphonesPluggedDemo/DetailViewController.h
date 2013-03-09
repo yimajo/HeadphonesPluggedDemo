@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HeadphonesDetector.h"
 
 @interface DetailViewController : UIViewController
+<HeadphonesDetectorDelegate>
 
 @property (strong, nonatomic) id detailItem;
 
