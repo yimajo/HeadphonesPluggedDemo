@@ -11,13 +11,18 @@
 
 @interface DetailViewController ()
 
-@property (strong, nonatomic) HeadphonesDetector *headphoneDetector;
+@property (strong, nonatomic) YIHeadphonesDetector *headphoneDetector;
 
 - (void)configureView;
 
 @end
 
 @implementation DetailViewController
+
+- (void)dealloc
+{
+	NSLog(@"DetailViewController dealloc");
+}
 
 #pragma mark - Managing the detail item
 
@@ -45,8 +50,10 @@
     [super viewDidLoad];
 	[self configureView];
 	
-	self.headphoneDetector = [[HeadphonesDetector alloc] init];
-	self.headphoneDetector.delegate = self;	
+	self.headphoneDetector = [[YIHeadphonesDetector alloc] init];
+	self.headphoneDetector.delegate = self;
+	[self.headphoneDetector headphonesArePlugged];
+	
 }
 
 - (void)didReceiveMemoryWarning
@@ -55,14 +62,19 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)headphonesDetectorStateChanged:(HeadphonesDetector *)headphonesDetector
+- (void)headphonesDetectorStateChanged:(YIHeadphonesDetector *)headphonesDetector
+{
+	[self assignStateWithHeadphonesArePlugged:headphonesDetector.headphonesArePlugged];
+}
+
+- (void)assignStateWithHeadphonesArePlugged:(BOOL)headphonesPlugged
 {
 	NSString *message = nil;
-	if (headphonesDetector.headphonesArePlugged) {
+	if (headphonesPlugged) {
 		message = @"plugged";
 	} else {
 		message = @"unplugged";
-	}	
+	}
 	self.detailDescriptionLabel.text = message;
 }
 
