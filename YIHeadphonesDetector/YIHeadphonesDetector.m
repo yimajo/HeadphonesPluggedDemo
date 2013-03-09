@@ -13,19 +13,19 @@
 
 - (void)dealloc
 {
-	AudioSessionRemovePropertyListenerWithUserData(kAudioSessionProperty_AudioRouteChange, audioRouteChangeListenerCallback2, (__bridge void *)self);
+	AudioSessionRemovePropertyListenerWithUserData(kAudioSessionProperty_AudioRouteChange, audioRouteChangeListenerCallback, (__bridge void *)self);
 }
 
 - (id)init
 {
 	if (self = [super init]) {
 		AudioSessionInitialize(NULL, NULL, NULL, NULL);
-		AudioSessionAddPropertyListener(kAudioSessionProperty_AudioRouteChange, audioRouteChangeListenerCallback2, (__bridge void *)self);
+		AudioSessionAddPropertyListener(kAudioSessionProperty_AudioRouteChange, audioRouteChangeListenerCallback, (__bridge void *)self);
 	}
 	return self;
 }
 
-void audioRouteChangeListenerCallback2(void *inUserData,
+void audioRouteChangeListenerCallback(void *inUserData,
 									   AudioSessionPropertyID inPropertyID,
 									   UInt32 inPropertyValueSize,
 									   const void *inPropertyValue)
