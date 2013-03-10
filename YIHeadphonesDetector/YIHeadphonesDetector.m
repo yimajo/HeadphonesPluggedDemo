@@ -13,14 +13,22 @@
 
 - (void)dealloc
 {
-	AudioSessionRemovePropertyListenerWithUserData(kAudioSessionProperty_AudioRouteChange, audioRouteChangeListenerCallback, (__bridge void *)self);
+	//プロパティリスナーコールバック関数を削除します
+	AudioSessionRemovePropertyListenerWithUserData(kAudioSessionProperty_AudioRouteChange,
+												   audioRouteChangeListenerCallback,
+												   (__bridge void *)self);
 }
 
 - (id)init
 {
 	if (self = [super init]) {
 		AudioSessionInitialize(NULL, NULL, NULL, NULL);
-		AudioSessionAddPropertyListener(kAudioSessionProperty_AudioRouteChange, audioRouteChangeListenerCallback, (__bridge void *)self);
+		
+		//プロパティリスナーコールバック関数を登録します
+		AudioSessionAddPropertyListener(kAudioSessionProperty_AudioRouteChange, //監視したいプロパティの識別子
+										audioRouteChangeListenerCallback,       //コールバック関数への参照
+										(__bridge void *)self);  //呼び出されるコールバック関数に渡されるためのデータです
+
 	}
 	return self;
 }
@@ -65,7 +73,7 @@ void audioRouteChangeListenerCallback(void *inUserData,
 	UInt32 propertySize = sizeof(CFStringRef);
 
 	if (AudioSessionGetProperty(kAudioSessionProperty_AudioRoute, &propertySize, &route) == 0)	{
-		//transferにしてrouteをrelease
+		//__bridge_transferにしてrouteがreleaseされるようにする
 		NSString *routeString = (__bridge_transfer NSString *)route;
 		
 		if ([routeString isEqualToString:@"Headphone"] == YES) {
